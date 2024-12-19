@@ -1,0 +1,173 @@
+/* Reset dan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3E5879;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #D8C4B6;
+}
+
+/* Hero Section dengan Gambar Latar */
+.hero {
+    height: 100vh;
+    background: url('Gambar/latar saja.jpg') no-repeat center center/cover, linear-gradient(to bottom, #3E5879, #557a95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hero Content Animasi */
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+    animation: waveMove 6s ease-in-out infinite;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #D8C4B6;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    animation: bounceIn 1.5s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #3E5879; /* Tombol dengan warna yang diminta */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #557a95; /* Warna aktif saat hover */
+    transform: translateY(-3px);
+}
+
+/* Tentang Kami */
+.about {
+    background-color: #f8f8f8;
+    padding: 100px 20px;
+    text-align: center;
+    color: #3E5879;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #D8C4B6; /* Warna header yang diminta */
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeInUp 1.5s ease-out 0.5s;
+}
+
+/* Produk Unggulan Section */
+.menu-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #D8C4B6;
+    border-radius: 8px;
+}
+
+.menu-item h4 {
+    font-size: 1.2rem;
+    color: #557a95; /* Warna teks produk unggulan */
+    margin: 10px 0 5px;
+}
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #3E5879;
+    line-height: 1.5;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
